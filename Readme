@@ -1,0 +1,57 @@
+
+
+todo.js:
+Defines a Mongoose schema for the "Todo" model, which represents a todo item.
+It has two fields: user_id (string) and todo (string), both of which are required.
+Exports the "Todo" model.
+
+user.js:
+Defines a Mongoose schema for the "User" model, which represents a user.
+It has two fields: username (string) and password (string), both of which are required.
+The username field is set to be unique.
+Exports the "User" model.
+
+addTodo.js:
+Requires the Express framework and the "Todo" model.
+Defines an Express router.
+Defines a POST route that expects a todo field in the request body and a :_id parameter in the route URL.
+Creates a new todo item using the "Todo" model, with the user_id set to the :_id parameter and the todo set to the value from the request body.
+Saves the new todo item to the database.
+Handles success and error cases.
+Exports the router.
+
+delete.js:
+Requires the Express framework and the "Todo" model.
+Defines an Express router.
+Defines a DELETE route that expects :id1 and :id2 parameters in the route URL.
+Deletes a todo item from the database using the "Todo" model, matching both the _id and user_id fields.
+Handles success and error cases.
+Exports the router.
+
+todo.js:
+Requires the Express framework and the "Todo" model.
+Defines an Express router.
+Defines a GET route that expects a :_id parameter in the route URL.
+Retrieves all todo items from the database that match the user_id field.
+Responds with JSON data containing the _id and todo fields of the retrieved todo items.
+Exports the router.
+
+userlogin.js:
+Requires the Express framework, bcrypt for password hashing, and the "User" model.
+Defines an Express router.
+Defines a POST route for user login.
+Checks if the provided username exists in the database.
+Compares the provided password with the hashed password stored in the database for the matching username.
+Responds with the user's _id if the username and password are correct.
+Handles error cases.
+Exports the router.
+
+userregister.js:
+Requires the Express framework, bcrypt for password hashing, and the "User" model.
+Defines an Express router.
+Defines a POST route for user registration.
+Hashes the provided password using bcrypt.
+Creates a new user with the hashed password and other provided fields.
+Saves the new user to the database.
+Handles error cases.
+Exports the router.

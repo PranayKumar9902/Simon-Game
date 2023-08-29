@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .registerForm {
+    width: 400px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .registerForm h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .registerForm input[type='text'],
+  .registerForm input[type='password'] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .registerForm button.submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .registerForm button.submit:hover {
+    background-color: #45a049;
+  }
+  
+  .login {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login span {
+    color: #999;
+    font-size: 14px;
+  }
+  
+  .login button.login {
+    border: none;
+    background: none;
+    color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .login button.login:hover {
+    text-decoration: underline;
+  }
+  

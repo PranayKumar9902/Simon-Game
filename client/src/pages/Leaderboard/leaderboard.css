@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    background-color: #011F3F;
+  }
+  
+  h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin: 5%;
+    color: #FEF2BF;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  table {
+    width: 50%;
+    border-collapse: collapse;
+    background-color: #011F3F;
+    margin: 0 auto;
+    /* border: 2px solid #FEF2BF; */
+  }
+  
+  th, td {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    color: #FEF2BF;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  th {
+    border-bottom: 2px solid #FEF2BF;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #032D50;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #013B6D;
+  }
+  
+  tbody td {
+    border-top: 2px solid #FEF2BF;
+  }
+  
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+  

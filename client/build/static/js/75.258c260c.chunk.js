@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclient=self.webpackChunkclient||[]).push([[75],{75:function(e,c,t){e.exports=t.p+"static/media/blue.0407f8865464d427dc9a.mp3"}}]);
